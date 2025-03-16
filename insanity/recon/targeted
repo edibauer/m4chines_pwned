@@ -1,0 +1,36 @@
+# Nmap 7.94SVN scan initiated Sat Mar 15 12:54:57 2025 as: nmap -sCV -p21,22,80 -oN targeted 192.168.1.11
+Nmap scan report for 192.168.1.11 (192.168.1.11)
+Host is up (0.11s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.2
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: ERROR
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:192.168.1.12
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.2 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 85:46:41:06:da:83:04:01:b0:e4:1f:9b:7e:8b:31:9f (RSA)
+|   256 e4:9c:b1:f2:44:f1:f0:4b:c3:80:93:a9:5d:96:98:d3 (ECDSA)
+|_  256 65:cf:b4:af:ad:86:56:ef:ae:8b:bf:f2:f0:d9:be:10 (ED25519)
+80/tcp open  http    Apache httpd 2.4.6 ((CentOS) PHP/7.2.33)
+|_http-title: Insanity - UK and European Servers
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/7.2.33
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+Service Info: OS: Unix
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 15 12:55:04 2025 -- 1 IP address (1 host up) scanned in 7.73 seconds

@@ -1,0 +1,30 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.1.11
+[+] Method:                  GET
+[+] Threads:                 20
+[+] Wordlist:                /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/img                  (Status: 301) [Size: 232] [--> http://192.168.1.11/img/]
+/data                 (Status: 301) [Size: 233] [--> http://192.168.1.11/data/]
+/css                  (Status: 301) [Size: 232] [--> http://192.168.1.11/css/]
+/js                   (Status: 301) [Size: 231] [--> http://192.168.1.11/js/]
+/news                 (Status: 301) [Size: 233] [--> http://192.168.1.11/news/]
+/webmail              (Status: 301) [Size: 236] [--> http://192.168.1.11/webmail/]
+/fonts                (Status: 301) [Size: 234] [--> http://192.168.1.11/fonts/]
+/monitoring           (Status: 301) [Size: 239] [--> http://192.168.1.11/monitoring/]
+/licence              (Status: 200) [Size: 57]
+/phpmyadmin           (Status: 301) [Size: 239] [--> http://192.168.1.11/phpmyadmin/]
+Progress: 76253 / 220561 (34.57%)^C
+[!] Keyboard interrupt detected, terminating.
+Progress: 77314 / 220561 (35.05%)
+===============================================================
+Finished
+===============================================================
