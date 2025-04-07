@@ -1,0 +1,197 @@
+# Nmap 7.94SVN scan initiated Thu Mar 27 00:24:03 2025 as: nmap -sCV -p22,8088,8000,7080 -oN targeted 192.168.1.13
+Nmap scan report for 192.168.1.13 (192.168.1.13)
+Host is up (0.072s latency).
+
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 28:1c:64:fa:9c:c3:d2:d4:bb:76:3d:3b:10:e2:b1:25 (RSA)
+|   256 da:b2:e1:7f:7c:1b:58:cf:fd:4f:74:e9:23:6d:51:d7 (ECDSA)
+|_  256 41:e1:0c:2b:d4:26:e8:d3:71:bb:9d:f9:61:56:63:c0 (ED25519)
+7080/tcp open  ssl/empowerid LiteSpeed
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: LiteSpeed
+| tls-alpn: 
+|   h2
+|   spdy/3
+|   spdy/2
+|_  http/1.1
+| ssl-cert: Subject: commonName=durian/organizationName=LiteSpeedCommunity/stateOrProvinceName=NJ/countryName=US
+| Not valid before: 2020-09-08T02:05:32
+|_Not valid after:  2022-12-07T02:05:32
+|_http-title: Did not follow redirect to https://192.168.1.13:7080/login.php
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 302 Found
+|     x-powered-by: PHP/5.6.36
+|     x-frame-options: SAMEORIGIN
+|     x-xss-protection: 1;mode=block
+|     referrer-policy: same-origin
+|     x-content-type-options: nosniff
+|     set-cookie: LSUI37FE0C43B84483E0=1809a311dd0ef6fe74f20043ff53444e; path=/; secure; HttpOnly
+|     expires: Thu, 19 Nov 1981 08:52:00 GMT
+|     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|     pragma: no-cache
+|     set-cookie: LSID37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     set-cookie: LSPA37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     set-cookie: LSUI37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     location: /login.php
+|     content-type: text/html; charset=UTF-8
+|     content-length: 0
+|     date: Thu, 27 Mar 2025 06:24:05 GMT
+|     server: LiteSpeed
+|     alt-svc: quic=":7080"; ma=2592000; v="43,46", h3-Q043=":7080";
+|   HTTPOptions: 
+|     HTTP/1.0 302 Found
+|     x-powered-by: PHP/5.6.36
+|     x-frame-options: SAMEORIGIN
+|     x-xss-protection: 1;mode=block
+|     referrer-policy: same-origin
+|     x-content-type-options: nosniff
+|     set-cookie: LSUI37FE0C43B84483E0=d54af45bed9c1eca2573ac66f5ab1f91; path=/; secure; HttpOnly
+|     expires: Thu, 19 Nov 1981 08:52:00 GMT
+|     cache-control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|     pragma: no-cache
+|     set-cookie: LSID37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     set-cookie: LSPA37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     set-cookie: LSUI37FE0C43B84483E0=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+|     location: /login.php
+|     content-type: text/html; charset=UTF-8
+|     content-length: 0
+|     date: Thu, 27 Mar 2025 06:24:05 GMT
+|     server: LiteSpeed
+|_    alt-svc: quic=":7080"; ma=2592000; v="43,46", h3-Q043=":7080";
+8000/tcp open  http          nginx 1.14.2
+|_http-title: Durian
+|_http-server-header: nginx/1.14.2
+|_http-open-proxy: Proxy might be redirecting requests
+8088/tcp open  radan-http    LiteSpeed
+|_http-title: Durian
+|_http-server-header: LiteSpeed
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     etag: "2fd-5f56ea13-40590;;;"
+|     last-modified: Tue, 08 Sep 2020 02:18:59 GMT
+|     content-type: text/html
+|     content-length: 765
+|     accept-ranges: bytes
+|     date: Thu, 27 Mar 2025 06:23:48 GMT
+|     server: LiteSpeed
+|     connection: close
+|     <html>
+|     <body bgcolor="white">
+|     <head>
+|     <title>Durian</title>
+|     <meta name="description" content="We Are Still Alive!">
+|     <meta name="keywords" content="Hacked by Ind_C0d3r">
+|     <meta name="robots" content="index, follow">
+|     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+|     <meta name="language" content="English">
+|     </head>
+|     <link href="https://fonts.googleapis.com/css?family=Righteous|Saira+Stencil+One&display=swap" rel="stylesheet">
+|     <style type="text/css">
+|     @font-face {
+|     font-family: 'Righteous', cursive;
+|     font-family: 'Saira Stencil One', cursive;
+|     </style>
+|     <center><br><br>
+|     <img src="https://www.producemarketguide.com/sites/default/files/Commoditi
+|   Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     content-type: text/html
+|     cache-control: private, no-cache, max-age=0
+|     pragma: no-cache
+|     content-length: 1209
+|     date: Thu, 27 Mar 2025 06:23:49 GMT
+|     server: LiteSpeed
+|     connection: close
+|     <!DOCTYPE html>
+|     <html style="height:100%">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+|     <title> 400 Bad Request
+|     </title></head>
+|     <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
+|     <div style="height:auto; min-height:100%; "> <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
+|     style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">400</h1>
+|     style="margin-top:20px;font-size: 30px;">Bad Request
+|     </h2>
+|     <p>It is not a valid request!</p>
+|_    </div></div><div style="color:#f0f0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7080-TCP:V=7.94SVN%T=SSL%I=7%D=3/27%Time=67E4EF1A%P=x86_64-pc-linux
+SF:-gnu%r(GetRequest,430,"HTTP/1\.0\x20302\x20Found\r\nx-powered-by:\x20PH
+SF:P/5\.6\.36\r\nx-frame-options:\x20SAMEORIGIN\r\nx-xss-protection:\x201;
+SF:mode=block\r\nreferrer-policy:\x20same-origin\r\nx-content-type-options
+SF::\x20nosniff\r\nset-cookie:\x20LSUI37FE0C43B84483E0=1809a311dd0ef6fe74f
+SF:20043ff53444e;\x20path=/;\x20secure;\x20HttpOnly\r\nexpires:\x20Thu,\x2
+SF:019\x20Nov\x201981\x2008:52:00\x20GMT\r\ncache-control:\x20no-store,\x2
+SF:0no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-check=0\r\npragm
+SF:a:\x20no-cache\r\nset-cookie:\x20LSID37FE0C43B84483E0=deleted;\x20expir
+SF:es=Thu,\x2001-Jan-1970\x2000:00:01\x20GMT;\x20Max-Age=0;\x20path=/\r\ns
+SF:et-cookie:\x20LSPA37FE0C43B84483E0=deleted;\x20expires=Thu,\x2001-Jan-1
+SF:970\x2000:00:01\x20GMT;\x20Max-Age=0;\x20path=/\r\nset-cookie:\x20LSUI3
+SF:7FE0C43B84483E0=deleted;\x20expires=Thu,\x2001-Jan-1970\x2000:00:01\x20
+SF:GMT;\x20Max-Age=0;\x20path=/\r\nlocation:\x20/login\.php\r\ncontent-typ
+SF:e:\x20text/html;\x20charset=UTF-8\r\ncontent-length:\x200\r\ndate:\x20T
+SF:hu,\x2027\x20Mar\x202025\x2006:24:05\x20GMT\r\nserver:\x20LiteSpeed\r\n
+SF:alt-svc:\x20quic=\":7080\";\x20ma=2592000;\x20v=\"43,46\",\x20h3-Q043=\
+SF:":7080\";\x20")%r(HTTPOptions,430,"HTTP/1\.0\x20302\x20Found\r\nx-power
+SF:ed-by:\x20PHP/5\.6\.36\r\nx-frame-options:\x20SAMEORIGIN\r\nx-xss-prote
+SF:ction:\x201;mode=block\r\nreferrer-policy:\x20same-origin\r\nx-content-
+SF:type-options:\x20nosniff\r\nset-cookie:\x20LSUI37FE0C43B84483E0=d54af45
+SF:bed9c1eca2573ac66f5ab1f91;\x20path=/;\x20secure;\x20HttpOnly\r\nexpires
+SF::\x20Thu,\x2019\x20Nov\x201981\x2008:52:00\x20GMT\r\ncache-control:\x20
+SF:no-store,\x20no-cache,\x20must-revalidate,\x20post-check=0,\x20pre-chec
+SF:k=0\r\npragma:\x20no-cache\r\nset-cookie:\x20LSID37FE0C43B84483E0=delet
+SF:ed;\x20expires=Thu,\x2001-Jan-1970\x2000:00:01\x20GMT;\x20Max-Age=0;\x2
+SF:0path=/\r\nset-cookie:\x20LSPA37FE0C43B84483E0=deleted;\x20expires=Thu,
+SF:\x2001-Jan-1970\x2000:00:01\x20GMT;\x20Max-Age=0;\x20path=/\r\nset-cook
+SF:ie:\x20LSUI37FE0C43B84483E0=deleted;\x20expires=Thu,\x2001-Jan-1970\x20
+SF:00:00:01\x20GMT;\x20Max-Age=0;\x20path=/\r\nlocation:\x20/login\.php\r\
+SF:ncontent-type:\x20text/html;\x20charset=UTF-8\r\ncontent-length:\x200\r
+SF:\ndate:\x20Thu,\x2027\x20Mar\x202025\x2006:24:05\x20GMT\r\nserver:\x20L
+SF:iteSpeed\r\nalt-svc:\x20quic=\":7080\";\x20ma=2592000;\x20v=\"43,46\",\
+SF:x20h3-Q043=\":7080\";\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8088-TCP:V=7.94SVN%I=7%D=3/27%Time=67E4EF0A%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,3EC,"HTTP/1\.0\x20200\x20OK\r\netag:\x20\"2fd-5f56ea13-4059
+SF:0;;;\"\r\nlast-modified:\x20Tue,\x2008\x20Sep\x202020\x2002:18:59\x20GM
+SF:T\r\ncontent-type:\x20text/html\r\ncontent-length:\x20765\r\naccept-ran
+SF:ges:\x20bytes\r\ndate:\x20Thu,\x2027\x20Mar\x202025\x2006:23:48\x20GMT\
+SF:r\nserver:\x20LiteSpeed\r\nconnection:\x20close\r\n\r\n<html>\n<body\x2
+SF:0bgcolor=\"white\">\n<head>\n<title>Durian</title>\n<meta\x20name=\"des
+SF:cription\"\x20content=\"We\x20Are\x20Still\x20Alive!\">\n<meta\x20name=
+SF:\"keywords\"\x20content=\"Hacked\x20by\x20Ind_C0d3r\">\n<meta\x20name=\
+SF:"robots\"\x20content=\"index,\x20follow\">\n<meta\x20http-equiv=\"Conte
+SF:nt-Type\"\x20content=\"text/html;\x20charset=utf-8\">\n<meta\x20name=\"
+SF:language\"\x20content=\"English\">\n</head>\n<link\x20href=\"https://fo
+SF:nts\.googleapis\.com/css\?family=Righteous\|Saira\+Stencil\+One&display
+SF:=swap\"\x20rel=\"stylesheet\">\n<style\x20type=\"text/css\">\n@font-fac
+SF:e\x20{\n\tfont-family:\x20'Righteous',\x20cursive;\n\tfont-family:\x20'
+SF:Saira\x20Stencil\x20One',\x20cursive;\n}\n</style>\n<center><br><br>\n<
+SF:img\x20src=\"https://www\.producemarketguide\.com/sites/default/files/C
+SF:ommoditi")%r(Socks5,58E,"HTTP/1\.1\x20400\x20Bad\x20Request\r\ncontent-
+SF:type:\x20text/html\r\ncache-control:\x20private,\x20no-cache,\x20max-ag
+SF:e=0\r\npragma:\x20no-cache\r\ncontent-length:\x201209\r\ndate:\x20Thu,\
+SF:x2027\x20Mar\x202025\x2006:23:49\x20GMT\r\nserver:\x20LiteSpeed\r\nconn
+SF:ection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\x20style=\"height:100
+SF:%\">\n<head>\n<meta\x20name=\"viewport\"\x20content=\"width=device-widt
+SF:h,\x20initial-scale=1,\x20shrink-to-fit=no\">\n<title>\x20400\x20Bad\x2
+SF:0Request\r\n</title></head>\n<body\x20style=\"color:\x20#444;\x20margin
+SF::0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\
+SF:x20height:100%;\x20background-color:\x20#fff;\">\n<div\x20style=\"heigh
+SF:t:auto;\x20min-height:100%;\x20\">\x20\x20\x20\x20\x20<div\x20style=\"t
+SF:ext-align:\x20center;\x20width:800px;\x20margin-left:\x20-400px;\x20pos
+SF:ition:absolute;\x20top:\x2030%;\x20left:50%;\">\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20<h1\x20style=\"margin:0;\x20font-size:150px;\x20line-height:1
+SF:50px;\x20font-weight:bold;\">400</h1>\n<h2\x20style=\"margin-top:20px;f
+SF:ont-size:\x2030px;\">Bad\x20Request\r\n</h2>\n<p>It\x20is\x20not\x20a\x
+SF:20valid\x20request!</p>\n</div></div><div\x20style=\"color:#f0f0");
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar 27 00:25:54 2025 -- 1 IP address (1 host up) scanned in 110.65 seconds
