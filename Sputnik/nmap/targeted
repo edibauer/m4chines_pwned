@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Sat Apr 12 12:04:50 2025 as: nmap -sCV -p8089,55555,61337 -oN targeted 192.168.1.11
+Nmap scan report for symfonos.local (192.168.1.11)
+Host is up (0.00015s latency).
+
+PORT      STATE SERVICE  VERSION
+8089/tcp  open  ssl/http Splunkd httpd
+|_http-server-header: Splunkd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2019-03-29T11:03:21
+|_Not valid after:  2022-03-28T11:03:21
+55555/tcp open  http     Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Flappy Bird Game
+| http-git: 
+|   192.168.1.11:55555/.git/
+|     Git repository found!
+|_    Repository description: Unnamed repository; edit this file 'description' to name the...
+61337/tcp open  http     Splunkd httpd
+| http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_Requested resource was http://symfonos.local:61337/en-US/account/login?return_to=%2Fen-US%2F
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Splunkd
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 12 12:05:20 2025 -- 1 IP address (1 host up) scanned in 29.96 seconds
