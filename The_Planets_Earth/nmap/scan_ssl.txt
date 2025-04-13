@@ -1,0 +1,132 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:ST = Space, L = Milky Way, CN = earth.local
+   i:ST = Space, L = Milky Way, CN = earth.local
+   a:PKEY: rsaEncryption, 4096 (bit); sigalg: RSA-SHA256
+   v:NotBefore: Oct 12 23:26:31 2021 GMT; NotAfter: Oct 10 23:26:31 2031 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFhjCCA26gAwIBAgIUZZZYScVhllOGdJWBnhMx5ztnlkcwDQYJKoZIhvcNAQEL
+BQAwOjEOMAwGA1UECAwFU3BhY2UxEjAQBgNVBAcMCU1pbGt5IFdheTEUMBIGA1UE
+AwwLZWFydGgubG9jYWwwHhcNMjExMDEyMjMyNjMxWhcNMzExMDEwMjMyNjMxWjA6
+MQ4wDAYDVQQIDAVTcGFjZTESMBAGA1UEBwwJTWlsa3kgV2F5MRQwEgYDVQQDDAtl
+YXJ0aC5sb2NhbDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMqFZz4K
+O71xGgMvMuvefKWV4oZtq4qz6Y+Jq6nQ03zyZEsNSuGsKlBmZM54+hUGyNOOUScd
+PL4kUBX0uMujUxq1XKceeg5gJ/kMEAKbe8bqzyN/tPNJ4aCM00fryP/+zDR9fSFZ
+lGF3Xd+pmvLZz+D4CLVJDe5sEVoXIdtlg338gDVrCfkFUzl1uDTB4kPmLPu60LUP
+4FNUWb2FY2HgQcHIIn6HuQ7GhHVnuNbfPn0PCX5ugGC9XxQq8XzwZs51bprdTU8x
+KaPkQKIJ60sGIS1xzgiLH5s2hkX5LW5u9V2mwqQ4CNS4FFMAbZl66NqPU08OuFau
+HLp/NDdixZPequLZGjIS/JjfYkNKHElzoMgLk5qvqFt9YpPX4ktfGteX8TsfF+pP
+ZdcudBC6BbODNTc+Wr+wLKe9OLZo1/EfJqHUH0h0Jwcrdfr/zOc77GzYhsdkSdiY
+GXZy48BkVV/kmWsMDK6W5Cs2rJx5DmC7ugt14KkzYv6Vv/o5uUtJjRypBjQ/htmR
+oo5mcKGaiohwCfR7T/lL1lA0Tq+cDYwATadudMQ8dgRmf099HO2iFXG4nqE+nacC
+ezfDR8qTXZDUaoTWUFAxI6Bp4M3BCae6x9S+LM6KF6ZoNZ4VroYDD/iub16Ci1FP
+biz6gaBX9iA/tBH6ubcW2V39EHgIswhwR0RtAgMBAAGjgYMwgYAwHQYDVR0OBBYE
+FCX2FKvs/3HZedJN9wbc5w/o884/MB8GA1UdIwQYMBaAFCX2FKvs/3HZedJN9wbc
+5w/o884/MA8GA1UdEwEB/wQFMAMBAf8wLQYDVR0RBCYwJIILZWFydGgubG9jYWyC
+FXRlcnJhdGVzdC5lYXJ0aC5sb2NhbDANBgkqhkiG9w0BAQsFAAOCAgEAmOynGBnK
+GaLm68D50Xd0mKJlyjpHrI1I97btr7iNKa0UOfSBOutDPyN51j2ibyG/Eq9lVyS3
+DUEzG3PezGOP0EI8mmT92CqkPfc3+R6NL0q/+tszxgGPPmy66T8L/o+nHgUCrDbO
+Ypa8DPhha7HFIVhlJC49PJI9/M8r6UqrJEWW1lJSSd3uSxyfrbt5YkxBAsaJQ9w5
+RgnAYYr4v/a+icwzNov9YdW2mqGl0NuKh6henh+T+4ctAz3aLsUL2rJni17/Tp1q
+6cxFkoNbbN6vTG7GjC0Mtqukbn9JIIfvWXQf7xWVIJIkvedhMDoikYE0tTeM8Vkz
+GngVRaziwCRdG4ur8ZztqHXMemhQ+TVqxOobTgc1NDIoMjhF1xwfbh2lSi/5px3/
+iN3D80mJ32x19p8/A+b9dk1kMWTfT46FBrl3UeF4VgzLVsVL2QQWNDZmzo0d4k7B
+Fn8Uzyzj7Tr1/R0oEL2Z75z2mZV9uClek7OLSarXFVQQOVgyXRbhG3+Q1AtVndur
+IdII4FThlEP3jnSAEin1dnKgsuGjz+8olmsyqu9p0xkv3iVvM1ErD/TnNUhAZGou
+ScfxACsYU2ZX8XKF/QyS35pgkR6/zJGashm/M9MMV8NN1AkhoQ0CwFzCcrQsGZjd
+S6cvQe6K0mUe4pdZwTYd2T0de4jpofXbWms=
+-----END CERTIFICATE-----
+subject=ST = Space, L = Milky Way, CN = earth.local
+issuer=ST = Space, L = Milky Way, CN = earth.local
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 2230 bytes and written 377 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 4096 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self-signed certificate)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: CCCEB6AABAB872050F8AFEB00A4A365770071FF2C5A20A6462CFDE8A1954554C
+    Session-ID-ctx: 
+    Resumption PSK: 1DE9E05EEB55044A8796EDD308D75EFD0E6FDB48253FFDE07277E8841FDE4C1E705575398BDE4A2FD6E39EBDB7BF3469
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 61 16 b3 74 2d 75 bd 91-01 f1 b5 dc c2 cc c0 2e   a..t-u..........
+    0010 - 58 db 52 20 2a 81 56 8d-08 a0 95 f4 0c 17 e6 45   X.R *.V........E
+    0020 - fb a6 9c 5d a2 2d 84 cc-bb 51 45 ec be 90 4c 2a   ...].-...QE...L*
+    0030 - 3a d2 4d dc 78 8c 33 b7-fa aa 40 51 e3 39 24 3f   :.M.x.3...@Q.9$?
+    0040 - b7 e0 4a 6b c5 71 05 d6-95 41 cf c7 90 60 2f 2e   ..Jk.q...A...`/.
+    0050 - 76 e5 46 7a a8 52 7e c0-60 a4 0e 03 65 09 c6 bd   v.Fz.R~.`...e...
+    0060 - 7c b8 54 1a a3 37 86 cb-07 21 7e 59 d6 43 72 b0   |.T..7...!~Y.Cr.
+    0070 - b9 b1 e8 bb 7b 09 aa fd-0a fc e5 85 37 de e2 24   ....{.......7..$
+    0080 - 26 bf 7a 8e 2f fc 53 32-9f e6 d4 a3 c1 bd a8 74   &.z./.S2.......t
+    0090 - b3 12 2a 28 48 1e de f1-ca ec c9 36 24 96 6e 82   ..*(H......6$.n.
+    00a0 - 10 7c 9b cb 72 57 29 d3-3f 71 7e f5 d5 cc 55 c2   .|..rW).?q~...U.
+    00b0 - a6 52 05 e9 4e 98 2b 37-26 ca 7f 15 b2 2c 90 a9   .R..N.+7&....,..
+    00c0 - 4a 8d 0b d8 2b f9 6a d8-5b 45 43 b6 4e 50 49 e7   J...+.j.[EC.NPI.
+    00d0 - da cf 5b c4 55 b9 37 26-86 ac 4a f4 a3 16 10 f8   ..[.U.7&..J.....
+
+    Start Time: 1744490403
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 631A0097CF090018748EFBD6BC65AA437B3D035ECCE72B8F4F980DE3822DC06E
+    Session-ID-ctx: 
+    Resumption PSK: C380268FBDFA332555BBF55F31B96AA41D6CA7566D7DCF549162E6B2C483BF1FA91404CBEE4A963B625368A0D823A453
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 61 16 b3 74 2d 75 bd 91-01 f1 b5 dc c2 cc c0 2e   a..t-u..........
+    0010 - fb a9 7e 9d 50 92 37 59-db a7 3b ac 3d a6 51 8e   ..~.P.7Y..;.=.Q.
+    0020 - 39 92 9c 2f f4 77 08 94-ce 39 d0 17 c1 4c 22 1f   9../.w...9...L".
+    0030 - 1e 3a e7 8c 2b 47 f2 70-8c 7d 68 22 35 a4 2d 23   .:..+G.p.}h"5.-#
+    0040 - 20 2b d5 78 0e e1 2c 24-a0 37 85 4a c5 9c 88 68    +.x..,$.7.J...h
+    0050 - 4f d0 2e ba 9f c7 09 92-05 f7 d4 ad 02 b8 e4 7a   O..............z
+    0060 - 8d 14 a7 32 f1 7f 33 8b-4b 27 9e b5 c4 79 0c a4   ...2..3.K'...y..
+    0070 - 29 9d fa 25 23 ff 13 fa-23 eb bc a3 f3 ef 54 9e   )..%#...#.....T.
+    0080 - d1 e7 6d d6 38 a4 9f 10-b0 82 60 00 d6 42 5b cf   ..m.8.....`..B[.
+    0090 - 63 60 98 c8 55 02 9f 28-0e 7a af 86 08 8e f8 fc   c`..U..(.z......
+    00a0 - ce eb 2e cc 07 10 fc b5-f9 62 34 e2 e9 06 e7 7b   .........b4....{
+    00b0 - 10 dd 63 05 4a c2 0e 79-12 fc 96 3a 06 dc d9 64   ..c.J..y...:...d
+    00c0 - 06 9a 8d 9f e4 84 2c 9b-ac 10 32 8e 3e 79 a6 c8   ......,...2.>y..
+    00d0 - af d6 1a 4d 3a 47 c1 d9-32 b1 88 37 b4 0e 6d d4   ...M:G..2..7..m.
+
+    Start Time: 1744490403
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+closed

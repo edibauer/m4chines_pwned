@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Sat Apr 12 14:36:01 2025 as: nmap --script http-enum -p80,443 -oN webScan 192.168.1.13
+Nmap scan report for 192.168.1.13 (192.168.1.13)
+Host is up (0.00042s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+443/tcp open  https
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+# Nmap done at Sat Apr 12 14:37:09 2025 -- 1 IP address (1 host up) scanned in 67.96 seconds
