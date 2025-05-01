@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Mon Apr 28 23:35:47 2025 as: nmap -sCV -p22,80,139,445,10123 -oN target 192.168.100.101
+Nmap scan report for 192.168.100.101
+Host is up (0.00047s latency).
+
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.4p1 Ubuntu 5ubuntu1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 0a:16:3f:c8:1a:7d:ff:f5:7a:66:05:63:76:7c:5a:95 (RSA)
+|   256 7f:47:44:cc:d1:c4:b7:54:de:4f:27:f2:39:38:ff:6e (ECDSA)
+|_  256 f5:d3:36:44:43:40:3d:11:9b:d1:a6:24:9f:99:93:f7 (ED25519)
+80/tcp    open  http        Apache httpd 2.4.46 ((Ubuntu))
+|_http-server-header: Apache/2.4.46 (Ubuntu)
+|_http-title: HackerCTF
+139/tcp   open  netbios-ssn Samba smbd 4.6.2
+445/tcp   open  netbios-ssn Samba smbd 4.6.2
+10123/tcp open  http        SimpleHTTPServer 0.6 (Python 3.9.4)
+|_http-server-header: SimpleHTTP/0.6 Python/3.9.4
+|_http-title: Directory listing for /
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_nbstat: NetBIOS name: HACKERCTFLAB, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb2-time: 
+|   date: 2025-04-29T05:35:43
+|_  start_date: N/A
+|_clock-skew: -16s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 28 23:36:00 2025 -- 1 IP address (1 host up) scanned in 12.17 seconds

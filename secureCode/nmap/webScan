@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Thu Apr 24 23:56:13 2025 as: nmap --script http-enum -p 80 -oN webScan 192.168.1.15
+Nmap scan report for 192.168.1.15 (192.168.1.15)
+Host is up (0.00019s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /robots.txt: Robots file
+|_  /include/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+# Nmap done at Thu Apr 24 23:56:14 2025 -- 1 IP address (1 host up) scanned in 1.23 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Mon Apr 28 23:54:31 2025 as: nmap --script http-enum -p10123 -oN webScan2 192.168.100.101
+Nmap scan report for 192.168.100.101
+Host is up (0.00037s latency).
+
+PORT      STATE SERVICE
+10123/tcp open  unknown
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+# Nmap done at Mon Apr 28 23:54:32 2025 -- 1 IP address (1 host up) scanned in 0.38 seconds

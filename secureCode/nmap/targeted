@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Thu Apr 24 23:54:42 2025 as: nmap -sCV -p80 -oN targeted 192.168.1.15
+Nmap scan report for 192.168.1.15 (192.168.1.15)
+Host is up (0.00015s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Coming Soon 2
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-robots.txt: 1 disallowed entry 
+|_/login/*
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 24 23:54:49 2025 -- 1 IP address (1 host up) scanned in 6.94 seconds
