@@ -1,0 +1,22 @@
+# Nmap 7.94SVN scan initiated Sun May  4 18:39:42 2025 as: nmap -sCV -p22,80 -oN targeted 192.168.1.9
+Nmap scan report for 192.168.1.9 (192.168.1.9)
+Host is up (0.00040s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 fc:c6:49:ce:9b:54:7f:57:6d:56:b3:0a:30:47:83:b4 (RSA)
+|   256 73:86:8d:97:2e:60:08:8a:76:24:3c:94:72:8f:70:f7 (ECDSA)
+|_  256 26:48:91:66:85:a2:39:99:f5:9b:62:da:f9:87:4a:e6 (ED25519)
+80/tcp open  http    nginx 1.17.4
+|_http-title: Login
+|_http-server-header: nginx/1.17.4
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May  4 18:39:50 2025 -- 1 IP address (1 host up) scanned in 7.48 seconds

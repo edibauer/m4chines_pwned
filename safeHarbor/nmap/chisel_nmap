@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Tue May  6 23:37:20 2025 as: nmap -sT -Pn -p3306 --open -T5 -v -n -oN chisel_nmap 172.20.0.138
+Nmap scan report for 172.20.0.138
+Host is up (0.0045s latency).
+
+PORT     STATE SERVICE
+3306/tcp open  mysql
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue May  6 23:37:20 2025 -- 1 IP address (1 host up) scanned in 0.05 seconds
