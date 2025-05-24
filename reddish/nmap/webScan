@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Fri May 16 22:52:40 2025 as: nmap --script http-enum -p1880 -oN webScan 10.10.10.94
+Nmap scan report for 10.10.10.94 (10.10.10.94)
+Host is up (0.075s latency).
+
+PORT     STATE SERVICE
+1880/tcp open  vsat-control
+
+# Nmap done at Fri May 16 22:52:40 2025 -- 1 IP address (1 host up) scanned in 0.47 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Fri May 16 22:50:56 2025 as: nmap -sCV -p1880 -oN targeted 10.10.10.94
+Nmap scan report for 10.10.10.94 (10.10.10.94)
+Host is up (0.076s latency).
+
+PORT     STATE SERVICE VERSION
+1880/tcp open  http    Node.js Express framework
+|_http-title: Error
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 16 22:51:12 2025 -- 1 IP address (1 host up) scanned in 16.19 seconds

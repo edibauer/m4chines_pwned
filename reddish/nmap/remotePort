@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Wed May 21 22:22:07 2025 as: nmap -sCV -p6379 -oN remotePort 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000047s latency).
+
+PORT     STATE SERVICE VERSION
+6379/tcp open  redis   Redis key-value store 4.0.9
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 21 22:22:13 2025 -- 1 IP address (1 host up) scanned in 6.53 seconds
