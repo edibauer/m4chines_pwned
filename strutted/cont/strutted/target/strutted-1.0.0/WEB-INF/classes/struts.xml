@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.messages.error.upload.filetype" value="Invalid file type. Allowed types: {0}."/>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.action.excludePattern" value="/uploads/.*"/>
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false"/>
+    <constant name="struts.patternMatcher" value="regex"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <!-- Set the default action to 'upload' directly -->
+        <default-action-ref name="upload"/>
+
+        <!-- Upload Action Mapping -->
+        <action name="upload" class="org.strutted.htb.Upload">
+            <interceptor-ref name="fileUpload">
+                <param name="maximumSize">2097152</param>
+                <param name="allowedExtensions">jpg,jpeg,png,gif</param>
+                <param name="message">Invalid file type! Allowed types: jpg, jpeg, png, gif.</param>            
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack"/>
+            
+            <!-- Result mappings -->
+            <result name="input">WEB-INF/upload.jsp</result>
+            <result name="error">WEB-INF/error.jsp</result>
+            <result name="success">WEB-INF/success.jsp</result>
+        </action>
+
+        <!-- Action Mapping for URLs matching "/s/*" -->
+        <action name="s/{id}" class="org.strutted.htb.URLUtil">
+            <param name="id">{1}</param>
+            <result name="success" type="redirect">${storedImagePath}</result>
+        </action>
+
+        <action name="how" class="org.strutted.htb.HowAction">
+            <result name="success">WEB-INF/how.jsp</result>
+            <result name="error">WEB-INF/error.jsp</result>
+        </action>
+
+        <action name="about" class="org.strutted.htb.AboutAction">
+            <result name="success">WEB-INF/about.jsp</result>
+            <result name="error">WEB-INF/error.jsp</result>
+        </action>
+    </package>
+</struts>
