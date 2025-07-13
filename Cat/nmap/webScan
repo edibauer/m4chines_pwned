@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Mon Jul  7 23:03:32 2025 as: nmap --script http-enum -p80 -oN webScan 10.10.11.53
+Nmap scan report for cat.htb (10.10.11.53)
+Host is up (0.071s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|_  /.git/HEAD: Git folder
+
+# Nmap done at Mon Jul  7 23:03:43 2025 -- 1 IP address (1 host up) scanned in 11.17 seconds
