@@ -31,13 +31,8 @@ nmap -sCV -p22,80 10.10.11.64 -oN targeted
 ### Exploitation
 
 
-
 ```bash
-# Example: Exploiting Samba with Metasploit
-msfconsole
-use exploit/multi/samba/usermap_script
-set RHOSTS [machine_ip]
-run
+amanda: arHkG7HAI68X8s1J
 ```
 
 \[Describe the outcome, e.g., initial shell access, user-level credentials.\]
