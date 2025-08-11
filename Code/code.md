@@ -114,12 +114,8 @@ cd root
 cat root.txt
 
 ```
-
-\[Describe the final access achieved, e.g., root shell, admin credentials.\]
-
 ## Challenges Faced
 
-\[List specific challenges encountered, e.g., difficulty identifying the correct exploit, dealing with restricted shells.\]
 
 - **Challenge 1**: \[e.g., Nmap scans were blocked by a firewall.\]
   - **Solution**: \[e.g., Used --script-args to bypass restrictions.\]
@@ -143,4 +139,4 @@ cat root.txt
 
 ---
 
-*Written by YourName, \[Month Year\]. Feedback welcome at \[your contact, e.g., GitHub profile\].*
+*Written by YourName, 08.2025. Feedback welcome at github.com/edibauer.*
