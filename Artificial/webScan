@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Sun Aug 31 13:30:03 2025 as: nmap --script http-enum -p80 -oN webScan 10.10.11.74

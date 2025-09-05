@@ -1,0 +1,26 @@
+# Nmap 7.94SVN scan initiated Tue Sep  2 00:04:41 2025 as: nmap -sCV -p80,143,993 -oN targeted 192.168.1.10
+Nmap scan report for 192.168.1.10 (192.168.1.10)
+Host is up (0.00068s latency).
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd 2.4.38 ((Debian))
+|_http-title: PowerGrid - Turning your lights off unless you pay.
+|_http-server-header: Apache/2.4.38 (Debian)
+143/tcp open  imap     Dovecot imapd
+|_imap-capabilities: post-login more capabilities SASL-IR have STARTTLS Pre-login ID LOGIN-REFERRALS ENABLE LOGINDISABLEDA0001 IDLE LITERAL+ OK IMAP4rev1 listed
+| ssl-cert: Subject: commonName=powergrid
+| Subject Alternative Name: DNS:powergrid
+| Not valid before: 2020-05-19T16:49:55
+|_Not valid after:  2030-05-17T16:49:55
+|_ssl-date: TLS randomness does not represent time
+993/tcp open  ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=powergrid
+| Subject Alternative Name: DNS:powergrid
+| Not valid before: 2020-05-19T16:49:55
+|_Not valid after:  2030-05-17T16:49:55
+|_ssl-date: TLS randomness does not represent time
+|_imap-capabilities: post-login more SASL-IR have ID capabilities Pre-login LOGIN-REFERRALS ENABLE AUTH=PLAINA0001 IDLE LITERAL+ OK IMAP4rev1 listed
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Sep  2 00:04:55 2025 -- 1 IP address (1 host up) scanned in 14.58 seconds

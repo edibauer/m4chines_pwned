@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Tue Sep  2 00:09:30 2025 as: nmap --script http-enum -p80 -oN webScan 192.168.1.10
+Nmap scan report for 192.168.1.10 (192.168.1.10)
+Host is up (0.00023s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|_  /images/: Potentially interesting directory w/ listing on 'apache/2.4.38 (debian)'
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+
+# Nmap done at Tue Sep  2 00:09:31 2025 -- 1 IP address (1 host up) scanned in 1.12 seconds
