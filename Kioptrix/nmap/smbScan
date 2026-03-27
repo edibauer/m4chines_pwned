@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Thu Mar 26 22:47:18 2026 as: /usr/lib/nmap/nmap --script smb-enum-services -p139 -oN smbScan 192.168.1.104
+Nmap scan report for 192.168.1.104 (192.168.1.104)
+Host is up (0.00025s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+
+# Nmap done at Thu Mar 26 22:47:19 2026 -- 1 IP address (1 host up) scanned in 0.36 seconds
