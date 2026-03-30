@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Mar 29 18:41:43 2026 as: /usr/lib/nmap/nmap --script http-enum -p80 -oN webScan http://10.129.20.236
+Unable to split netmask from target expression: "http://10.129.20.236"
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sun Mar 29 18:41:44 2026 -- 0 IP addresses (0 hosts up) scanned in 0.25 seconds
