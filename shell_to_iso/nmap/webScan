@@ -1,0 +1,17 @@
+# Nmap 7.98 scan initiated Thu Apr  2 22:50:04 2026 as: /usr/lib/nmap/nmap --privileged --script http-enum -p80 -oN webScan 192.168.1.8
+Nmap scan report for 192.168.1.8 (192.168.1.8)
+Host is up (0.00021s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /admin/login.php: Possible admin folder
+|   /classes/: Potentially interesting directory w/ listing on 'apache/2.2.16 (debian)'
+|   /css/: Potentially interesting directory w/ listing on 'apache/2.2.16 (debian)'
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /images/: Potentially interesting directory w/ listing on 'apache/2.2.16 (debian)'
+|   /index/: Potentially interesting folder
+|_  /show/: Potentially interesting folder
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+# Nmap done at Thu Apr  2 22:50:05 2026 -- 1 IP address (1 host up) scanned in 0.86 seconds

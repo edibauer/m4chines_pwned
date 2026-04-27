@@ -1,0 +1,18 @@
+# Nmap 7.98 scan initiated Sat Apr  4 21:00:33 2026 as: /usr/lib/nmap/nmap -sCV -p22,80 -oN targeted 192.168.1.14
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.00025s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 b5:77:4c:88:d7:27:54:1c:56:1d:48:d9:a4:1e:28:91 (RSA)
+|   256 c6:a8:c8:9e:ed:0d:67:1f:ae:ad:6b:d5:dd:f1:57:a1 (ECDSA)
+|_  256 fa:a9:b0:e3:06:2b:92:63:ba:11:2f:94:d6:31:90:b2 (ED25519)
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: DRAGON BALL | Aj's
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr  4 21:00:40 2026 -- 1 IP address (1 host up) scanned in 6.89 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Tue Mar 31 17:49:39 2026 as: /usr/lib/nmap/nmap --privileged --script http-enum -p80 -oN webScan cctv.htb
+Nmap scan report for cctv.htb (10.129.22.194)
+Host is up (0.093s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Tue Mar 31 17:50:11 2026 -- 1 IP address (1 host up) scanned in 31.81 seconds

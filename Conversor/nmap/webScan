@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Mon Mar 30 18:29:56 2026 as: /usr/lib/nmap/nmap --script http-enum -p80 -oN webScan conversor.htb
+Nmap scan report for conversor.htb (10.129.21.230)
+Host is up (0.10s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Mon Mar 30 18:30:33 2026 -- 1 IP address (1 host up) scanned in 37.33 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.98 scan initiated Sat Apr  4 21:01:49 2026 as: /usr/lib/nmap/nmap --script http-enum -p80 -oN webScan 192.168.1.14
+Nmap scan report for 192.168.1.14 (192.168.1.14)
+Host is up (0.00026s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|_  /robots.txt: Robots file
+MAC Address: 94:E7:0B:7D:28:87 (Intel Corporate)
+
+# Nmap done at Sat Apr  4 21:01:50 2026 -- 1 IP address (1 host up) scanned in 0.78 seconds
