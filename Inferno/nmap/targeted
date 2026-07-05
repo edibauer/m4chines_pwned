@@ -1,0 +1,18 @@
+# Nmap 7.99 scan initiated Tue Jun 16 23:20:42 2026 as: /usr/lib/nmap/nmap --privileged -sCV -p22,80 -oN targeted 192.168.1.118
+Nmap scan report for 192.168.1.118 (192.168.1.118)
+Host is up (0.00022s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 82:f4:d2:47:74:86:2f:b4:94:62:cd:31:f6:ef:51:a4 (RSA)
+|   256 01:e9:02:a3:ff:ff:4a:7b:f2:20:1e:0b:44:9d:7f:f7 (ECDSA)
+|_  256 a5:dc:a7:b1:20:33:f1:8d:c7:dd:f1:a3:59:5d:c2:34 (ED25519)
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-title: Dante's Inferno
+|_http-server-header: Apache/2.4.38 (Debian)
+MAC Address: 08:00:27:1D:29:2D (Oracle VirtualBox virtual NIC)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jun 16 23:20:49 2026 -- 1 IP address (1 host up) scanned in 6.82 seconds

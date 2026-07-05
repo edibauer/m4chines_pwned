@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Tue Jun 16 23:21:45 2026 as: /usr/lib/nmap/nmap --privileged --script http-enum -p 80 -oN webScan 192.168.1.118
+Nmap scan report for 192.168.1.118 (192.168.1.118)
+Host is up (0.00023s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+MAC Address: 08:00:27:1D:29:2D (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Tue Jun 16 23:21:46 2026 -- 1 IP address (1 host up) scanned in 0.86 seconds
