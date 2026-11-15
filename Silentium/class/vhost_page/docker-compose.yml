@@ -1,0 +1,12 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "1337:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./public_html:/usr/share/nginx/html
+      - ./secret_html:/usr/share/nginx/secret
+
+
+

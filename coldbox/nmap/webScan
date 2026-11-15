@@ -1,0 +1,21 @@
+# Nmap 7.99 scan initiated Sat Nov  7 21:17:47 2026 as: /usr/lib/nmap/nmap --script http-enum -p80 -oN webScan 192.168.1.12
+Nmap scan report for 192.168.1.12 (192.168.1.12)
+Host is up (0.00018s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /wp-login.php: Possible admin folder
+|   /readme.html: Wordpress version: 2 
+|   /: WordPress version: 4.1.31
+|   /wp-includes/images/rss.png: Wordpress version 2.2 found.
+|   /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.
+|   /wp-includes/images/blank.gif: Wordpress version 2.6 found.
+|   /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.
+|   /wp-login.php: Wordpress login page.
+|   /wp-admin/upgrade.php: Wordpress login page.
+|   /readme.html: Interesting, a readme.
+|_  /hidden/: Potentially interesting folder
+MAC Address: 08:00:27:E7:8D:19 (Oracle VirtualBox virtual NIC)
+
+# Nmap done at Sat Nov  7 21:17:48 2026 -- 1 IP address (1 host up) scanned in 0.88 seconds

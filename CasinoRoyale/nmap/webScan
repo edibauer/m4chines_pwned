@@ -1,0 +1,16 @@
+# Nmap 7.99 scan initiated Fri Aug 14 22:47:57 2026 as: /usr/lib/nmap/nmap --privileged --script http-enum -p80,8081 -oN webScan 192.168.1.11
+Nmap scan report for 192.168.1.11 (192.168.1.11)
+Host is up (0.00022s latency).
+
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-enum: 
+|   /robots.txt: Robots file
+|   /phpmyadmin/: phpMyAdmin
+|   /cards/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|_  /install/: Potentially interesting folder
+8081/tcp open  blackice-icecap
+MAC Address: 94:E6:F7:EA:2C:4D (Intel Corporate)
+
+# Nmap done at Fri Aug 14 22:47:58 2026 -- 1 IP address (1 host up) scanned in 1.04 seconds

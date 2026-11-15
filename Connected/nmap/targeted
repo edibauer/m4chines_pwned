@@ -1,0 +1,24 @@
+# Nmap 7.99 scan initiated Sat Oct 17 21:13:20 2026 as: /usr/lib/nmap/nmap -sCV -p22,80,443 -oN targeted 10.129.134.91
+Nmap scan report for 10.129.134.91 (10.129.134.91)
+Host is up (0.11s latency).
+
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 4e:60:38:6f:e7:78:6c:ca:58:62:a1:f1:56:ae:8d:30 (RSA)
+|   256 12:41:55:26:9d:ad:3d:e8:bf:4e:31:aa:d7:d1:a5:d2 (ECDSA)
+|_  256 8e:b6:96:e0:21:83:5d:1d:ce:8d:e2:6a:dd:38:c6:75 (ED25519)
+80/tcp  open  http      Apache httpd 2.4.6 ((CentOS) OpenSSL/1.0.2k-fips PHP/7.4.16)
+|_http-server-header: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.4.16
+|_http-title: Did not follow redirect to http://connected.htb/
+443/tcp open  ssl/https Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.4.16
+|_ssl-date: TLS randomness does not represent time
+| http-title: 400 Bad Request
+|_Requested resource was /admin
+|_http-server-header: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.4.16
+| ssl-cert: Subject: commonName=pbxconnect/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Not valid before: 2025-11-30T14:07:27
+|_Not valid after:  2026-11-30T14:07:27
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Oct 17 21:15:44 2026 -- 1 IP address (1 host up) scanned in 144.13 seconds
