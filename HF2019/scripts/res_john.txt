@@ -1,0 +1,9 @@
+Using default input encoding: UTF-8
+Loaded 1 password hash (phpass [phpass ($P$ or $H$) 256/256 AVX2 8x3])
+Cost 1 (iteration count) is 8192 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+kittykat1        (?)     
+1g 0:00:00:00 DONE (2026-11-15 18:32) 4.347g/s 46747p/s 46747c/s 46747C/s sandara..bless
+Use the "--show --format=phpass" options to display all of the cracked passwords reliably
+Session completed
